@@ -23,7 +23,6 @@ body {
 .head_container {
 	height: 102px;
 	width:100%;
-	margin:auto;
 	background-image: -ms-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
 	background-image: -moz-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
 	background-image: -o-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
@@ -38,6 +37,8 @@ body {
 	/*border-radius: 15px;
 	overflow:hidden; */
 	color:#BDF7FD;
+	min-width: 650px;
+	max-width: 2000px;
 }
 
 .main_container {
@@ -47,7 +48,7 @@ body {
 	margin-right:auto;
 	color:#BDF7FD;
 	min-width: 650px;
-	max-width: 1600px;
+	max-width: 2000px;
 }
 
 .navigacija {
