@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #0000FF;
+}
+.cl {
+	width: 100 %;
+	clear: both;
+	height: 1px;
+}
+
+body {
+	/* background-color:#003; */
+	background-color:#000;
+	font-family: 'Electrolize', sans-serif;
+	background-image:url(../images/background.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+.head_container {
+	height: 102px;
+	width:100%;
+	margin:auto;
+	background-image: -ms-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
+	background-image: -moz-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
+	background-image: -o-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #000000), color-stop(0.1, #000000), color-stop(1, #0C0C7C));
+	background-image: -webkit-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
+	background-image: linear-gradient(to bottom right, #000000 0%, #000000 10%, #0C0C7C 100%);
+}
+
+.header {
+	width:90%;
+	margin: auto;
+	/*border-radius: 15px;
+	overflow:hidden; */
+	color:#BDF7FD;
+}
+
+.main_container {
+	width:90%;
+	/*background-color:#0C0C7C;*/
+	margin-left:auto;
+	margin-right:auto;
+	color:#BDF7FD;
+	min-width: 650px;
+	max-width: 1600px;
+}
+
+.navigacija {
+	letter-spacing:-1px;
+	text-align:center;
+}
+.navigacija ul { /*nepotrebno */
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	width: 850px;
+	list-style:none;
+	padding:5px 5px;
+	border: solid #4DE8F9 1px;
+	border-radius: 10px;
+	background-image: -ms-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
+	background-image: -moz-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
+	background-image: -o-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #000000), color-stop(0.1, #000000), color-stop(1, #0C0C7C));
+	background-image: -webkit-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
+	background-image: linear-gradient(to bottom right, #000000 0%, #000000 10%, #0C0C7C 100%);
+	overflow:hidden;
+}
+.navigacija li {  /* nepotrebno */
+	display: inline;
+	font-size: 20px;
+	padding:0 8px;
+	font-variant:small-caps;
+}
+
+.main_content {
+	margin: auto;
+	border: solid darkblue 1px; /* #4DE8F9 */
+	border-radius: 10px;
+	background: rgb(0, 0, 102);
+	background: rgba(7, 9, 65, 0.9);
+	padding: 0px 20px;
+}
+
+.footer {
+	text-align: right;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}

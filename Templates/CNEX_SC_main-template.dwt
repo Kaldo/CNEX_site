@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="hr">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>CNEX_SC_main-template</title>
+<link href ="css/css_main.css" rel="stylesheet" type="text/css" />
+<link href ="css/css_logos.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+	<div class="main_container">
+    	<div class="header">
+            <span id="SClogo"><img src="../StarCitizenLogo.png" /></span>
+            <span id="naslov">Official CNexus - Star Citizen stranica</span>
+            <span id="CNEXlogo"><img src="../CNexLogo.png" /></span>
+        </div>
+    
+    	<div class="navigacija">
+        	<!-- <ul>
+            	<li> Naslovnica </li>
+                <li> Forum </li>
+                <li> Star Citizen </li>
+                <li> CNexus (17.3.2009) </li>
+			</ul> -->
+            <img src="../images/navigacija.png"  />
+        </div>
+        
+       	<!--TemplateBeginEditable name="content" -->
+        <div class="main_content">
+        
+        </div>
+        <!-- TemplateEndEditable -->
+        
+        <div class="cl"></div>
+        <div><hr /></div>
+        <div class="footer">
+        	bla bla bla
+        </div>
+   	</div>
+        
+</body>
+</html>
