@@ -2,12 +2,14 @@
 /* CSS Document */
 
 #SClogo {
-	width:84px;
+	width:82px;
+	height:100px;
 	float:left;
 	border:solid black 1px;
 }
 #CNEXlogo {
-	width:102px;
+	width:100px;
+	height:100px;
 	float:right;
 	border:solid black 1px;
 }
@@ -59,8 +61,18 @@
 	opacity:0;
 }
 
-#Table_01 {
-	margin: auto;
+.nav_img {
+	position: relative;
+	width:100%;
+	height:100%;
+}
+
+.nav_text {
+	font-size: 20px;
+	position: absolute;
+	top:10px;
+	left: 100px;
+	color:#BDF7FD;
 }
 
 #nav_TL :hover{
