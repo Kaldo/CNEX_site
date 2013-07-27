@@ -2,23 +2,19 @@
 /* CSS Document */
 
 #SClogo {
-	width:82px;
-	height:100px;
 	float:left;
 	border:solid black 1px;
 }
 #CNEXlogo {
-	width:100px;
-	height:100px;
 	float:right;
 	border:solid black 1px;
 }
 #naslov {
 	width:814px;
-	line-height:100px;
+	line-height:50px;
 	font-size: 30px;
 	text-align:center;
-	margin-left:20px;
+	margin-left:60px;
 }
 
 #opimg_L {
@@ -67,11 +63,18 @@
 	height:100%;
 }
 
-.nav_text {
+.nav_text_L {
 	font-size: 20px;
 	position: absolute;
 	top:10px;
-	left: 100px;
+	left: 120px;
+	color:#BDF7FD;
+}
+.nav_text_R {
+	font-size: 20px;
+	position: absolute;
+	top:10px;
+	left: 120px;
 	color:#BDF7FD;
 }
 
