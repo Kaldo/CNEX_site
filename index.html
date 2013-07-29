@@ -8,6 +8,19 @@
 	<link href ="css/css_main.css" rel="stylesheet" type="text/css" />
 	<link href ="css/css_logos.css" rel="stylesheet" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css' />
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.fadeThis').append('<span class="hover"></span>').each(function () {
+			  var $span = $('> span.hover', this).css('opacity', 0);
+			  $(this).hover(function () {
+				$span.stop().fadeTo(500, 1);
+			  }, function () {
+				$span.stop().fadeTo(500, 0);
+			  });
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -20,7 +33,7 @@
 		<div class="cl"></div>
 	</div>
 	<div class="main_container">
-		<table id="Table_01" style="margin:auto" width="833" height="137" border="0" cellpadding="0" cellspacing="0">
+		<table id="nav_tab">
 			<tr>
 				<td colspan="5">
 					<img src="images/nav_src_2_01.png" width="832" height="14" alt=""></td>
@@ -32,7 +45,7 @@
 					<img src="images/nav_src_2_02.png" width="361" height="15" alt=""></td>
 				<td rowspan="5"> <!-- CIRCLE -->
 					<a href="logo.html">
-						<img src="images/nav_circle.png" width="110" height="110" alt=""></a></td>
+						<img id="nav_circle" src="images/nav_circle.png" width="110" height="110" alt=""></a></td>
 				<td colspan="2">
 					<img src="images/nav_src_2_04.png" width="361" height="15" alt=""></td>
 				<td>
@@ -41,14 +54,14 @@
 			<tr>
 				<td rowspan="5">
 					<img src="images/nav_src_2_05.png" width="13" height="108" alt=""></td>
-				<td class="nav_img"> <!-- TOP LEFT -->
+				<td class="nav_img" width="348px"> <!-- TOP LEFT -->
 					<a href="index.html">
-						<img src="images/nav_TL.png" width="348" height="40" border="0" alt="">
-							<span class="nav_text_L">Naslovnica</span></a></td>
+						<div class="fadeThis">
+						<span class="nav_text_L">Naslovnica</span></div></a></td>
 				<td class="nav_img"> <!-- TOP RIGHT -->
 					<a href="forum.html">
 						<img src="images/nav_TR.png" width="349" height="40" border="0" alt="">
-							<span class="nav_text_R">Forum</span></a></td>
+						<span class="nav_text_R">Forum</span></a></td>
 				<td rowspan="5">
 					<img src="images/nav_src_2_08.png" width="12" height="108" alt=""></td>
 				<td>
@@ -66,11 +79,11 @@
 				<td class="nav_img"> <!-- BOTTOM LEFT -->
 					<a href="cnexus.html">
 						<img src="images/nav_BL.png" width="348" height="40" border="0" alt="">
-							<span class="nav_text_L">CNexus</span></a></td>
+						<span class="nav_text_L">CNexus</span></a></td>
 				<td class="nav_img"> <!-- BOTTOM RIGHT -->
 					<a href="starcitizen.html">
 						<img src="images/nav_BR.png" width="349" height="40" border="0" alt="">
-							<span class="nav_text_R">Star Citizen</span></a></td>
+						<span class="nav_text_R">Star Citizen</span></a></td>
 				<td>
 					<img src="images/spacer.gif" width="1" height="40" alt=""></td>
 			</tr>
@@ -82,21 +95,17 @@
 				<td>
 					<img src="images/spacer.gif" width="1" height="14" alt=""></td>
 			</tr>
-			<tr>
-				<td>
-					<img src="images/nav_src_2_15.png" width="110" height="13" alt=""></td>
-				<td>
-					<img src="images/spacer.gif" width="1" height="13" alt=""></td>
-			</tr>
 		</table>
 		<div class="cl"></div>
         
-        <div class="main_content"><br />
-			<p style="text-align:justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
-			</p><img style="align:center;" src="src/mos_top.png" /><p>
-			Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit. Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna. Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
-			</p>
-			<img style="width:600px" src="src/beng.png" />
+        <div class="main_content">
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+			
+			<br /><img style="align:center;" src="src/mos_top.png" />
+			<br />Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit. Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna. Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
+			
+			<br /><img style="width:600px" src="src/beng.png" />
+			<br />tekst tekst tekst
 		</div>
         
         <div class="cl"></div>

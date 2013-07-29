@@ -12,6 +12,7 @@ a:link, a:visited {
 }
 
 body {
+	margin: 8px 0px;
 	/* background-color:#003; */
 	background-color:#000;
 	font-family: 'Electrolize', sans-serif;
@@ -54,32 +55,20 @@ body {
 	max-width: 2000px;
 }
 
-/*.navigacija {
-	letter-spacing:-1px;
-	text-align:center;
+#nav_tab {
+	margin: auto;
+	width: 833px;
+	height: 137px;
+	border: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
 }
-.navigacija ul { 
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-	width: 850px;
-	list-style:none;
-	padding:5px 5px;
-	border: solid #4DE8F9 1px;
-	border-radius: 10px;
-	background-image: -ms-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
-	background-image: -moz-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
-	background-image: -o-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
-	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #000000), color-stop(0.1, #000000), color-stop(1, #0C0C7C));
-	background-image: -webkit-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
-	background-image: linear-gradient(to bottom right, #000000 0%, #000000 10%, #0C0C7C 100%);
-	overflow:hidden;
+#nav_tab td, table th {
+	padding: 0px;
 }
-	display: inline;
-	font-size: 20px;
-	padding:0 8px;
-	font-variant:small-caps;
-} */
+#nav_tab img {
+	position: relative;
+}
 
 .main_content {
 	margin: auto;
@@ -87,7 +76,8 @@ body {
 	border-radius: 10px;
 	background: rgb(0, 0, 102);
 	background: rgba(7, 9, 65, 0.9);
-	padding: 0px 20px;
+	padding: 20px 20px;
+	text-align: justify;
 }
 
 .footer {

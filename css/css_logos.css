@@ -17,58 +17,24 @@
 	margin-left:60px;
 }
 
-#opimg_L {
-	position:relative;
-	width:400px; height:300px;
-}
-#opimg_L img {
-	position:absolute;
-  	left:0;
-  	-webkit-transition: opacity 0.2s ease-in-out;
-  	-moz-transition: opacity 0.2s ease-in-out;
-  	-o-transition: opacity 0.2s ease-in-out;
-  	transition: opacity 0.2s ease-in-out;
-	
-	border: solid black 3px;
-    border-radius: 10px;
-    overflow: hidden;	
-}
-#opimg_L img.opimg_top:hover {
-	opacity:0;	
-}
-
-#opimg_R {
-	position:relative;
-	width:400px; height:300px;
-}
-#opimg_R img {
-	position:absolute;
-  	right:0;
-  	-webkit-transition: opacity 0.2s ease-in-out;
-  	-moz-transition: opacity 0.2s ease-in-out;
-  	-o-transition: opacity 0.2s ease-in-out;
-  	transition: opacity 0.2s ease-in-out;
-	
-	border: solid black 3px;
-    border-radius: 10px;
-    overflow: hidden
-}
-#opimg_R img.opimg_top:hover {
-	opacity:0;
+#nav_circle {
+	position: absolute;
+	z-index: 3;
 }
 
 .nav_img {
 	position: relative;
-	width:100%;
-	height:100%;
+	width:348px;
+	height:40px;
+	vertical-align: top;
 }
-
 .nav_text_L {
 	font-size: 20px;
 	position: absolute;
 	top:10px;
 	left: 120px;
 	color:#BDF7FD;
+	z-index: 4;
 }
 .nav_text_R {
 	font-size: 20px;
@@ -76,13 +42,35 @@
 	top:10px;
 	left: 120px;
 	color:#BDF7FD;
+	
 }
 
-#nav_TL :hover{
-	background-image: -ms-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
-	background-image: -moz-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
-	background-image: -o-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
-	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #000000), color-stop(0.1, #000000), color-stop(1, #0C0C7C));
-	background-image: -webkit-linear-gradient(top left, #000000 0%, #000000 10%, #0C0C7C 100%);
-	background-image: linear-gradient(to bottom right, #000000 0%, #000000 10%, #0C0C7C 100%);
+.fadeThis {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display:block;
+	background-image: url(../images/TL.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	/* width: 348px; */
+	width: 400px;
+	height: 40px;
+	z-index: 1;
+}
+
+.hover {
+	position: absolute;
+	display:block;
+	background-image: url(../images/TL.png);
+	background-repeat: no-repeat;
+	background-position: 0px -40px;
+	width: 400px; 
+	height: 40px;
+	z-index: 2;
+	
+  	/*-webkit-transition: opacity 0.2s ease-in-out;
+  	-moz-transition: opacity 0.2s ease-in-out;
+  	-o-transition: opacity 0.2s ease-in-out;
+  	transition: opacity 0.2s ease-in-out;*/
 }
