@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+.fadeTL {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display:block;
+	background-image: url(../images/TL.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 400px;
+	height: 40px;
+	z-index: 1;
+}
+.hoverTL {
+	position: absolute;
+	display:block;
+	background-image: url(../images/TL.png);
+	background-repeat: no-repeat;
+	background-position: 0px -40px;
+	width: 400px; height: 40px;
+	z-index: 2;
+}
+
+.fadeBL {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display:block;
+	background-image: url(../images/BL.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 400px;
+	height: 40px;
+	z-index: 1;
+}
+.hoverBL {
+	position: absolute;
+	display:block;
+	background-image: url(../images/BL.png);
+	background-repeat: no-repeat;
+	background-position: 0px -40px;
+	width: 400px; height: 40px;
+	z-index: 2;
+}
+
+.fadeTR {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display:block;
+	background-image: url(../images/TR.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 450px;
+	height: 40px;
+	z-index: 1;
+}
+.hoverTR {
+	position: absolute;
+	right: 0px;
+	display:block;
+	background-image: url(../images/TR.png);
+	background-repeat: no-repeat;
+	background-position: 0px -40px;
+	width: 450px; height: 40px;
+	z-index: 2;
+}
+
+.fadeBR {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display:block;
+	background-image: url(../images/BR.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 450px;
+	height: 40px;
+	z-index: 1;
+}
+.hoverBR {
+	position: absolute;
+	right: 0px;
+	display:block;
+	background-image: url(../images/BR.png);
+	background-repeat: no-repeat;
+	background-position: 0px -40px;
+	width: 450px; height: 40px;
+	z-index: 2;
+}

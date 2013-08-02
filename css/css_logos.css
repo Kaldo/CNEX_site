@@ -40,37 +40,10 @@
 	font-size: 20px;
 	position: absolute;
 	top:10px;
-	left: 120px;
+	left: 220px;
 	color:#BDF7FD;
+	z-index: 4;
 	
 }
 
-.fadeThis {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	display:block;
-	background-image: url(../images/TL.png);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	/* width: 348px; */
-	width: 400px;
-	height: 40px;
-	z-index: 1;
-}
 
-.hover {
-	position: absolute;
-	display:block;
-	background-image: url(../images/TL.png);
-	background-repeat: no-repeat;
-	background-position: 0px -40px;
-	width: 400px; 
-	height: 40px;
-	z-index: 2;
-	
-  	/*-webkit-transition: opacity 0.2s ease-in-out;
-  	-moz-transition: opacity 0.2s ease-in-out;
-  	-o-transition: opacity 0.2s ease-in-out;
-  	transition: opacity 0.2s ease-in-out;*/
-}
