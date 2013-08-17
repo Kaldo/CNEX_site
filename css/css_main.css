@@ -16,9 +16,12 @@ body {
 	/* background-color:#003; */
 	background-color:#000;
 	font-family: 'Electrolize', sans-serif;
-	background-image:url(../src/background.png);
+	/*background-image:url(../src/background.png);
 	background-repeat: no-repeat;
-	background-position:center;
+	background-position:center;*/
+	background:url(../gridbg.png) repeat center fixed, url(../noisebg.gif) repeat center fixed;
+	background-position-x: 50%;
+	background-position-y: 50%;
 }
 
 .head_container {
@@ -72,12 +75,23 @@ body {
 
 .main_content {
 	margin: auto;
-	border: solid darkblue 1px; /* #4DE8F9 */
-	border-radius: 10px;
-	background: rgb(0, 0, 102);
-	background: rgba(7, 9, 65, 0.9);
+	border: solid black 2px; /* #4DE8F9 */
+	/*border-radius: 10px;*/
+	background: rgba(7, 9, 65, 0.9);  /* starije */
+	background: rgba(20, 28, 90, 0.3);
 	padding: 20px 20px;
 	text-align: justify;
+}
+
+.main_left {
+	width: 58%;
+	float: left;
+	position: relative;
+}
+.main_right {
+	width: 38%;
+	float:right;
+	position: relative;
 }
 
 .footer {
